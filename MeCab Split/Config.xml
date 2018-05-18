@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <Properties>
+    <MetaInfo>
+      <Name>MaCab Split</Name>
+      <Description><![CDATA[Japanese MaCab MA split text.]]></Description>
+      <ToolVersion>1</ToolVersion>
+      <CategoryName>Parse</CategoryName>
+      <Author>John Smith</Author>
+      <Icon>MeCab.png</Icon>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

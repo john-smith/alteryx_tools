@@ -1,0 +1,1 @@
+mecab-python-windows==0.996.0

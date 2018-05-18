@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDllEntryPoint="mecab_split.py" EngineDll="Python" SDKVersion="10.1"/>
+  <Properties>
+    <MetaInfo>
+      <Name>MaCab Split</Name>
+      <Description><![CDATA[Japanese MaCab MA split text.]]></Description>
+      <ToolVersion>1</ToolVersion>
+      <CategoryName>Parse</CategoryName>
+      <Author>John Smith</Author>
+      <Icon>MeCab.png</Icon>
+    </MetaInfo>
+  </Properties>
+  <GuiSettings Help="" Html="mecab_splitGui.html" Icon="mecab.png" SDKVersion="10.1">
+    <InputConnections>
+      <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection"/>
+    </InputConnections>
+    <OutputConnections>
+      <Connection Name="Output" AllowMultiple="False" Optional="False" Type="Connection"/>
+    </OutputConnections>
+  </GuiSettings>
+</AlteryxJavaScriptPlugin>
