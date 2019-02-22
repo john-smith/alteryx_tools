@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <Properties>
+    <MetaInfo>
+      <Name>https://en.wikipedia.org/wiki/Local_outlier_factor</Name>
+      <Description><![CDATA[Calculate outlier score using LOF(Local Outlier Factor).
+For details on LOF is : https://en.wikipedia.org/wiki/Local_outlier_factor]]></Description>
+      <ToolVersion>1</ToolVersion>
+      <CategoryName>Predictive</CategoryName>
+      <Author>Yuya Ozawa</Author>
+       <Icon>lof.png</Icon>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>
