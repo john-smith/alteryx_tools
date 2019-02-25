@@ -22,8 +22,9 @@
         <Configuration>
           <RScript><![CDATA[library(dbscan)
 
+k <- %Question.k%
 df <- read.Alteryx("#1")
-lof <- lof(df, k=3)
+lof <- lof(df, k = k)
 
 df["lof"] <- lof
 write.Alteryx(df, 1)
@@ -216,6 +217,32 @@ write.Alteryx(df, 1)
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
     </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="258" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>k</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -269,6 +296,12 @@ write.Alteryx(df, 1)
         <Name>List Box (9)</Name>
         <Value />
         <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>k</Name>
+        <Value>3</Value>
+        <IsNumeric value="True" />
       </Constant>
     </Constants>
     <MetaInfo>
@@ -340,6 +373,25 @@ For details on LOF is : https://en.wikipedia.org/wiki/Local_outlier_factor</Desc
               <Description>Macro Output (6)</Description>
               <Name>Macro Output (6)</Name>
               <ToolId value="6" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Parameters</Description>
+          <Name>Tab (14)</Name>
+          <ToolId value="14" />
+          <Questions>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>k :</Description>
+              <Name>k</Name>
+              <ToolId value="13" />
+              <Minimum value="1" />
+              <Maximum value="100" />
+              <Increment value="1" />
+              <Default value="3" />
+              <Decimals value="0" />
             </Question>
           </Questions>
         </Question>
