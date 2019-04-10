@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDllEntryPoint="Janome_Tokenizer.py" EngineDll="Python" SDKVersion="10.1"/>
+  <GuiSettings Help="" Html="Janome_TokenizerGui.html" Icon="janome.png" SDKVersion="10.1">
+    <InputConnections>
+      <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection"/>
+    </InputConnections>
+    <OutputConnections>
+      <Connection Name="Output" AllowMultiple="False" Optional="False" Type="Connection"/>
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>Janome Tokenizer</Name>
+      <Description><![CDATA[Japanese Janome MA split text.]]></Description>
+      <ToolVersion>1</ToolVersion>
+      <CategoryName>Parse</CategoryName>
+      <Author>John Smith</Author>
+      <Icon>janome.png</Icon>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

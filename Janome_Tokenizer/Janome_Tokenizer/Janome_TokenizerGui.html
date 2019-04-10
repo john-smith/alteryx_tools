@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Janome tokenizer</title>
+    <script type="text/javascript">
+      document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">')
+    </script>
+    <script type="text/javascript">
+      window.JanomeGUINamespace = {};
+	    window.JanomeGUINamespace.record_id_ui = {
+        type: 'DropDown',
+        widgetId: 'record_id'
+      }
+
+      window.JanomeGUINamespace.target_field_ui = {
+        type: 'DropDown',
+        widgetId: 'target_field'
+      }
+    </script>
+</head>
+<body>
+  <p>XMSG("Select Target Field")<br>
+  <ayx data-ui-props='window.JanomeGUINamespace.target_field_ui'></ayx></p>
+  <p>XMSG("Select Record ID Field")<br>
+  <ayx data-ui-props='window.JanomeGUINamespace.record_id_ui'></ayx></p>
+
+  <script type="text/javascript">
+    Alteryx.Gui.BeforeLoad = function(manager, AlteryxDataItems, json) {
+      var target = new AlteryxDataItems.FieldSelector("target_field", {manager: manager});
+      manager.addDataItem(target);
+      manager.bindDataItemToWidget(target, "target_field");
+
+      var record_id = new AlteryxDataItems.FieldSelector("record_id", {manager: manager});
+      manager.addDataItem(record_id);
+      manager.bindDataItemToWidget(record_id, "record_id");
+    };
+
+    window.Alteryx.Gui.Annotation = function (manager) {
+      var item = manager.getDataItem('record_id');
+      var num = manager.getDataItem('target_field');
+      return item.getVaflue() + " : " + num.getValue();
+    };
+  </script>
+</body>
+</html>

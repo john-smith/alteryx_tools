@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <Properties>
+    <MetaInfo>
+      <Name>Janome Tokenizer</Name>
+      <Description><![CDATA[Japanese Janome MA split text.]]></Description>
+      <ToolVersion>1</ToolVersion>
+      <CategoryName>Parse</CategoryName>
+      <Author>John Smith</Author>
+      <Icon>Janome.png</Icon>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>
