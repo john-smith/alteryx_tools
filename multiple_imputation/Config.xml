@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <Properties>
+    <MetaInfo>
+      <Name>Multiple Imputation</Name>
+      <Description><![CDATA[Use the Multiple Imputation to compensate for missing values.]]></Description>
+      <ToolVersion>1</ToolVersion>
+      <CategoryName>Predictive</CategoryName>
+      <Author>Yuya Ozawa</Author>
+       <Icon>Multiple Imputation.png</Icon>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

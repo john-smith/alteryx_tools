@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<srcreport xmlns:wrg="http://www.extendthereach.com/Alteryx/schema/" version="1.0" globalpagenumbers="false" title="MeCab Split">
+	<style>
+		.DefaultNumericText { numeric:true; locale:1041; }
+		.DefaultText { color:#000000; font-family:Arial; font-size:14; text-align:left; }
+	</style>
+	<pagesettings pageheight="792" pagewidth="612" topmargin="36" leftmargin="36" rightmargin="36" bottommargin="36" pagelayout="portrait"/>
+	<div class="DefaultText" style="width:100%;"><span style="font-family:Arial;font-size:12.0pt;">Complete missing values using Multiple Imputation.</span><div style="font-family:Arial;font-size:12.0pt;"><nbsp/></div>
+		<div style="font-family:Arial;font-size:12.0pt;"><nbsp/></div>
+		<div><span style="font-family:Arial;font-size:12.0pt;">Download is : <a href="https://github.com/john-smith/alteryx_tools/raw/master/Multiple Inputation.yxi">Multiple Imputation.yxi</a></span></div>
+	</div>
+</srcreport>
